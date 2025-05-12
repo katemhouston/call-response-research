@@ -39,6 +39,8 @@ Run each Jupyter notebook, in any order:
 - `stats_tests_priority.ipynb`
 - `stats_tests_capacity.ipynb`
 
+## Dependencies
+
 This project uses the following Python packages:
 
 - pandas
