@@ -8,6 +8,8 @@ The goal of this stage is to:
 - Test for significant differences in response time patterns across call priorities, responding agencies (CAHOOTS vs EPD), and CAHOOTS capacity status (available vs full)
 - Generate statistical results to support the main research questions and interpretations
 
+## Files
+
 ### `stats_tests_priority.ipynb`
 - Compares response times across call priority levels (1–9, P)
 - Tests include ANOVA and t-tests (overall and per-priority)
