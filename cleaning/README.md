@@ -11,7 +11,7 @@ The goal of this stage is to:
 
 ## Folder Contents
 
-- ` updated_data_cleaning.ipynb`: Loads raw data, fixes formatting issues, and outputs a cleaned version.
+- `updated_data_cleaning.ipynb`: Loads raw data, fixes formatting issues, and outputs a cleaned version.
 - `creating_busy_log_CAHOOTS.ipynb`: Creates a busy log for CAHOOTS from the cleaned dataset. 
 - `creating_EPD_capacity_log.ipynb`: Creates a busy log for EPD from the cleaned dataset.
 
