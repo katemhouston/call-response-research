@@ -8,11 +8,17 @@ The goal of this stage is to:
 - Test for significant differences in response time patterns across call priorities, responding agencies (CAHOOTS vs EPD), and CAHOOTS capacity status (available vs full)
 - Generate statistical results to support the main research questions and interpretations
 
-## Folder Contents
+### `stats_tests_priority.ipynb`
+- Compares response times across call priority levels (1–9, P)
+- Tests include ANOVA and t-tests (overall and per-priority)
+- Normalizes data for fair comparison
+- Output: `priority_results.csv`
 
-- `stats_tests_priority.ipynb`: Performs an ANOVA and t-tests to compare response times between CAHOOTS and EPD across different priorities.
-- `stats_tests_capacity.ipynb`: Performs Levene’s tests, t-tests, and Kolmogorov-Smirnov tests to compare response times between full and available capacities for EPD and CAHOOTS.
-
+### `stats_tests_capacity.ipynb`
+- Tests whether CAHOOTS’ availability (full vs available) impacts response times for both CAHOOTS and EPD
+- Includes Levene’s test, t-tests, and KS tests
+- Output: `capacity_results.csv`
+  
 ## Input Files
 
 Located in `../data/`:
@@ -32,3 +38,15 @@ Run each Jupyter notebook, in any order:
 
 - `stats_tests_priority.ipynb`
 - `stats_tests_capacity.ipynb`
+
+This project uses the following Python packages:
+
+- pandas
+- numpy
+- scipy
+- matplotlib
+- seaborn
+
+Standard library modules used:
+- datetime (for timestamp parsing and operations)
+- re (regular expressions for string cleaning)
