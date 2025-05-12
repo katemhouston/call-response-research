@@ -4,9 +4,9 @@ This folder contains scripts that perform statistical analysis on the cleaned an
 
 ## Purpose
 
-The goal of this stage is to: ##UPDATE
-- Test for significant differences in response time patterns across priorities, agencies, and capacities
-- Generate results to support the research questions
+The goal of this stage is to:
+- Test for significant differences in response time patterns across call priorities, responding agencies (CAHOOTS vs EPD), and CAHOOTS capacity status (available vs full)
+- Generate statistical results to support the main research questions and interpretations
 
 ## Folder Contents
 
@@ -15,17 +15,16 @@ The goal of this stage is to: ##UPDATE
 
 ## Input Files
 
-Expected to be located in `../data/`:
+Located in `../data/`:
 - `cleaned_data.csv`: Output from the cleaning stage
 - `busy_log.csv`: Contains call start/end times and overlap info for CAHOOTS
 - `epd_with_capacity.csv`: Contains call start/end times and overlap info for EPD
-- 
+
 ## Output Files
 
 Saved to `../results/`:
 - `results_priority.csv`: DataFrame containing test statistics and p-values from **priority** analysis
 - `results_capacity.csv`: DataFrame containing test statistics and p-values from **capacity** analysis
-- *(Optional)* any figures or plots generated
 
 ## How to Run
 
