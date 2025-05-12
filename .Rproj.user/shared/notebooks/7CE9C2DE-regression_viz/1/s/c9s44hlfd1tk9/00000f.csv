@@ -1,0 +1,2 @@
+"0","data <- read_csv(""cleaned_full_class_data.csv"", show_col_types = FALSE)"
+"0","data"
