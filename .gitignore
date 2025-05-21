@@ -4,3 +4,4 @@ data/busy_log.csv
 .ipynb_checkpoints/
 results/
 .DS_Store
+.Rproj.user

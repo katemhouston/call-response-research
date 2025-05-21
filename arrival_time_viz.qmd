@@ -15,7 +15,7 @@ library(readr)
 ```
 
 ```{r data}
-data <- read_csv("cleaned_full_class_data.csv", show_col_types = FALSE)
+data <- read_csv("data/cleaned_full_class_data.csv", show_col_types = FALSE)
 ```
 
 ```{r priority arrival times}
@@ -50,6 +50,32 @@ data |>
   labs(
     title = 'Dispatch-to-Arrival Times by Call Priority',
     subtitle = 'Arrival time calculated as time from unit dispatch to arrival.',
+    x = 'Arrival Time (minutes)',
+    y = 'Density',
+    color = 'Call Priority',
+    fill = 'Call Priority'
+  ) +
+  theme_minimal() +
+  facet_wrap(~agency)
+```
+
+```{r}
+data |> 
+  mutate(priority = factor(priority, 
+                           levels = c("P", "1", "2", "3", "4", "5", "6", "7", "8", "9"))) |> 
+  ggplot(
+    aes(
+      x = secs_to_arrv/60,
+      color = priority,
+      fill = priority    # <--- ADD fill = priority
+    )
+  ) + 
+  geom_density(alpha = 0.1) +    # alpha makes the lines slightly transparent if you want
+  coord_cartesian(xlim = c(0, 60)) +
+  scale_x_continuous(breaks = seq(0, 60, by = 5)) +
+  labs(
+    title = 'Call-to-Arrival Times by Call Priority',
+    subtitle = 'Arrival time calculated as time from time of call to arrival.',
     x = 'Arrival Time (minutes)',
     y = 'Density',
     color = 'Call Priority',
