@@ -3,5 +3,6 @@ data/epd_with_capacity.csv
 data/busy_log.csv
 .ipynb_checkpoints/
 results/
+visualizations/
 .DS_Store
 .Rproj.user

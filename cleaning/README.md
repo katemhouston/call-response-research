@@ -11,7 +11,7 @@ The goal of this stage is to:
 
 ## Folder Contents
 
-- ` updated_data_cleaning.ipynb`: Loads raw data, fixes formatting issues, and outputs a cleaned version.
+- `updated_data_cleaning.ipynb`: Loads raw data, fixes formatting issues, and outputs a cleaned version.
 - `creating_busy_log_CAHOOTS.ipynb`: Creates a busy log for CAHOOTS from the cleaned dataset. 
 - `creating_EPD_capacity_log.ipynb`: Creates a busy log for EPD from the cleaned dataset.
 
@@ -45,3 +45,17 @@ Run the jupyter files in the following order:
 1. updated_data_cleaning.ipynb
 2. creating_busy_log_CAHOOTS.ipynb
 3. creating_EPD_capacity_log.ipynb
+
+## Dependencies
+
+This project uses the following Python packages:
+
+- pandas
+- numpy
+- scipy
+- matplotlib
+- seaborn
+
+Standard library modules used:
+- datetime (for timestamp parsing and operations)
+- re (regular expressions for string cleaning)
