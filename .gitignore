@@ -6,3 +6,12 @@ results/
 visualizations/
 .DS_Store
 .Rproj.user
+call_to_arrv_by_p.png
+capacity_viz.qmd
+disp_to_arrv_by_p.png
+priority_viz.qmd
+redone_call_to_arrv
+updated CAD data.Rproj
+analysis/stats_tests_capacity-Copy1.ipynb
+analysis/stats_tests_capacity-Copy2.ipynb
+analysis/stats_tests_priority-Copy1.ipynb
