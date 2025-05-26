@@ -11,14 +11,14 @@ The goal of this stage is to:
 ## Files
 
 ### `stats_tests_priority.ipynb`
-- Compares response times across call priority levels (1–9, P)
-- Tests include ANOVA and t-tests (overall and per-priority)
+- Compares response times across call priority levels (1–9, P) between CAHOOTS and EPD
+- Includes one t-test per priority
 - Normalizes data for fair comparison
 - Output: `priority_results.csv`
 
 ### `stats_tests_capacity.ipynb`
 - Tests whether CAHOOTS’ availability (full vs available) impacts response times for both CAHOOTS and EPD
-- Includes Levene’s test, t-tests, and KS tests
+- Includes one t-test per agency
 - Output: `capacity_results.csv`
   
 ## Input Files
